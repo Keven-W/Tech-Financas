@@ -24,10 +24,10 @@ const TransactionTable = ({
     return (
       <div className="bg-slate-800 rounded-xl shadow-lg p-6 border border-slate-700 mb-8">
         <h2 className="text-2xl font-bold mb-4 text-slate-100">
-          Histórico de Transações
+          Histórico de transações
         </h2>
         <p className="text-slate-400 text-center py-8">
-          Nenhuma transação registrada ainda
+          Nenhuma transação registrada ainda.
         </p>
       </div>
     );
@@ -36,7 +36,7 @@ const TransactionTable = ({
   return (
     <div className="bg-slate-800 rounded-xl shadow-lg p-6 overflow-x-auto border border-slate-700 mb-8">
       <h2 className="text-2xl font-bold mb-6 text-slate-100">
-        Histórico de Transações
+        Histórico de transações
       </h2>
 
       <table className="w-full">

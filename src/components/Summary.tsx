@@ -31,7 +31,7 @@ const Summary = ({ transactions }: SummaryProps) => {
       <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-sm text-gray-600 font-medium">Total de Ganhos</p>
+            <p className="text-sm text-gray-600 font-medium">Total de ganhos</p>
             <p className="text-2xl font-bold text-green-600 mt-1">
               {formatCurrency(totalGanhos)}
             </p>
@@ -46,7 +46,7 @@ const Summary = ({ transactions }: SummaryProps) => {
       <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-red-500">
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-sm text-gray-600 font-medium">Total de Gastos</p>
+            <p className="text-sm text-gray-600 font-medium">Total de gastos</p>
             <p className="text-2xl font-bold text-red-600 mt-1">
               {formatCurrency(totalGastos)}
             </p>
