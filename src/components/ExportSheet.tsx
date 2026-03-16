@@ -20,7 +20,7 @@ const ExportSheet = ({
   // Função para gerar e baixar a planilha
   const handleExport = () => {
     if (transactions.length === 0) {
-      alert('Não há transações para exportar');
+      alert('Não há transações para exportar.');
       return;
     }
 
@@ -46,7 +46,7 @@ const ExportSheet = ({
   // Função para limpar todo histórico com confirmação
   const handleClearAll = () => {
     if (transactions.length === 0) {
-      alert('Não há transações para apagar');
+      alert('Não há transações para apagar.');
       return;
     }
 
@@ -62,7 +62,7 @@ const ExportSheet = ({
   return (
     <div className="bg-slate-800 rounded-xl shadow-lg p-6 mb-6 border border-slate-700">
       <h2 className="text-2xl font-bold mb-4 text-slate-100">
-        Gerenciar Dados
+        Gerenciar dados
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -71,7 +71,7 @@ const ExportSheet = ({
           className="flex items-center justify-center gap-2 bg-green-600 text-white py-3 px-4 rounded-lg hover:bg-green-700 hover:scale-105 transition-all duration-300 font-medium shadow-lg hover:shadow-green-400/50"
         >
           <Download size={20} />
-          Gerar Planilha
+          Gerar planilha
         </button>
 
         <button
@@ -83,7 +83,7 @@ const ExportSheet = ({
               : 'bg-slate-700 text-slate-500 cursor-not-allowed'
           }`}
         >
-          Limpar Filtro
+          Limpar filtro
         </button>
 
         <button
@@ -91,7 +91,7 @@ const ExportSheet = ({
           className="flex items-center justify-center gap-2 bg-red-600 text-white py-3 px-4 rounded-lg hover:bg-red-700 hover:scale-105 transition-all duration-300 font-medium shadow-lg hover:shadow-red-400/50"
         >
           <Trash size={20} />
-          Apagar Histórico
+          Apagar histórico
         </button>
       </div>
     </div>

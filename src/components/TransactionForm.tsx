@@ -18,14 +18,14 @@ const TransactionForm = ({ onAddTransaction }: TransactionFormProps) => {
     setError('');
 
     if (!date || !category || !amount) {
-      setError('Todos os campos são obrigatórios');
+      setError('É necessário preencher todos os campos.');
       return;
     }
 
     const numericAmount = parseCurrency(amount);
 
     if (numericAmount <= 0) {
-      setError('O valor deve ser maior que zero');
+      setError('O valor deve ser maior que zero.');
       return;
     }
 
@@ -45,7 +45,7 @@ const TransactionForm = ({ onAddTransaction }: TransactionFormProps) => {
   return (
     <div className="bg-slate-800 rounded-xl shadow-lg p-6 mb-8 border border-slate-700">
       <h2 className="text-2xl font-bold mb-6 text-slate-100">
-        Cadastrar Transação
+        Cadastrar transação
       </h2>
 
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -113,7 +113,7 @@ const TransactionForm = ({ onAddTransaction }: TransactionFormProps) => {
           type="submit"
           className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-slate-900 py-3 px-4 rounded-lg hover:from-yellow-500 hover:to-yellow-600 hover:scale-105 transition-all duration-300 font-bold shadow-lg hover:shadow-yellow-400/50"
         >
-          Adicionar Transação
+          Adicionar transação
         </button>
       </form>
     </div>
